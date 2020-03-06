@@ -8,10 +8,10 @@ Implementation of the stream Vernam Cipher with the preceding substitution-box, 
 Allows you to encrypt any files on the disk. 
 A graphical user interface is planned.
 
-![alt text][xor]
+<p align="center"> 
+<img src="https://userscontent2.emaze.com/images/ed06e7a5-646b-4f64-a1c7-5ec5f1a18220/3eaafb613d3afd31bfb96b9c2147873d.png" width="400">
+</p>
 
 ```
 The project is currently under development.
 ```
-
-[xor]:https://userscontent2.emaze.com/images/ed06e7a5-646b-4f64-a1c7-5ec5f1a18220/3eaafb613d3afd31bfb96b9c2147873d.png
