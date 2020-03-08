@@ -1,5 +1,7 @@
 from .crypto_lib import *
 
+# S_BOX = s_box_generator('בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ')  # temporary example
+
 
 def s_box_generator(iv: str) -> list:
     """
@@ -28,7 +30,7 @@ def substitute_data_block(data_block: bytes, s_box: list) -> bytes:
     data_block_code_mask = list()
     data_block_substitution_list_result = list()
     data_block_substitution_result = bytes()
-    for i in range(0,len(data_block),2):
+    for i in range(0, len(data_block), 2):
         data_symbols = str(chr(data_block[i]))+str(chr(data_block[i+1]))
         data_block_code_mask.append(int(data_symbols, 16))
     for i in data_block_code_mask:
@@ -45,7 +47,7 @@ def resubstitute_data_block(data_block: bytes, s_box: list) -> bytes:
     data_block_symbols_list = list()
     data_block_resubstitution_list = list()
     data_block_resubstitution_result = bytes()
-    for i in range(0,len(data_block),2):
+    for i in range(0, len(data_block), 2):
         data_symbols = str(chr(data_block[i]))+str(chr(data_block[i+1]))
         data_block_symbols_list.append(data_symbols)
     for i in data_block_symbols_list:
